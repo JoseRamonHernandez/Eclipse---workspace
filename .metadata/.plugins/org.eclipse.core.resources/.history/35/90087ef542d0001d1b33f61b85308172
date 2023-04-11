@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="WebServiceServidorSOAPPractice">
+        <property name="context-root" value="WebServiceServidorSOAPPractice"/>
+        <property name="java-output-path" value="/WebServiceServidorSOAPPractice/build/classes"/>
+    </wb-module>
+</project-modules>

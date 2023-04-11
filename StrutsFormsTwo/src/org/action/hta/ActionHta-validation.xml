@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+"-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+
+<validators>
+
+	<field name="nombre">
+		<field-validator type="requiredstring">
+			<message key="*DEBE ESCRIBIR UN NOMBRE"/>
+		</field-validator>
+	</field>
+	
+	<field name="correo">
+		<field-validator type="email">
+			<message key="*FORMATO EMAIL INCORRECTO"/>
+		</field-validator>
+	</field>
+
+	<field name="edad">
+		<field-validator type="int">
+			<param name="min">18</param>
+			<param name="max">55</param>
+			<message>*LA EDAD DEBE ESTAR ENTRE ${min} Y ${max}</message>
+		</field-validator>
+	</field>
+
+	<field name="salario">
+		<field-validator type="double">
+			<param name="minInclusive">10000.0</param>
+			<param name="maxInclusive">20000.0</param>
+			<message>*EL SALARIO DEBE ESTAR ENTRE ${minInclusive} Y ${maxInclusive}</message>
+		</field-validator>
+	</field>
+	
+	<field name="fecha">
+		<field-validator type="date">
+			<param name="min">01/01/20</param>
+			<param name="max">24/03/23</param>
+			<message>*LA FECHA DEBE ESTAR ENTRE ${min} Y ${max}</message>
+		</field-validator>
+	</field>
+	
+	<field name="comentario">
+		<field-validator type="requiredstring">
+			<message key="*DEBE ESCRIBIR UN COMENTARIO"/>
+		</field-validator>
+	</field>
+
+</validators>

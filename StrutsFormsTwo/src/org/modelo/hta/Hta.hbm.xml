@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 24/03/2023 12:53:20 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.modelo.hta.Hta" table="HTA">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="nombre" type="java.lang.String">
+            <column name="NOMBRE" />
+        </property>
+        <property name="correo" type="java.lang.String">
+            <column name="CORREO" />
+        </property>
+        <property name="edad" type="int">
+            <column name="EDAD" />
+        </property>
+        <property name="salario" type="double">
+            <column name="SALARIO" />
+        </property>
+        <property name="fecha" type="java.sql.Date">
+            <column name="FECHA" />
+        </property>
+        <property name="comentario" type="java.lang.String">
+            <column name="COMENTARIO" />
+        </property>
+    </class>
+</hibernate-mapping>

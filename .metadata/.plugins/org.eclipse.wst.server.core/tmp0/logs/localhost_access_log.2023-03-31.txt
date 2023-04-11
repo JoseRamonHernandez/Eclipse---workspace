@@ -1,0 +1,14 @@
+127.0.0.1 - - [31/Mar/2023:12:19:06 -0600] "GET / HTTP/1.1" 404 961
+127.0.0.1 - - [31/Mar/2023:12:19:38 -0600] "POST /WebServiceServidorSOAP/services/AdminService HTTP/1.0" 200 291
+127.0.0.1 - - [31/Mar/2023:12:19:38 -0600] "POST /WebServiceServidorSOAP/services/AdminService HTTP/1.0" 200 5392
+127.0.0.1 - - [31/Mar/2023:12:21:20 -0600] "POST /WebServiceServidorSOAP/services/ServiceCrud HTTP/1.1" 200 448
+127.0.0.1 - - [31/Mar/2023:12:24:21 -0600] "POST /WebServiceServidorSOAP/services/ServiceCrud HTTP/1.1" 200 430
+127.0.0.1 - - [31/Mar/2023:12:24:37 -0600] "POST /WebServiceServidorSOAP/services/ServiceCrud HTTP/1.1" 200 447
+127.0.0.1 - - [31/Mar/2023:12:40:50 -0600] "POST /WebServiceServidorSOAP/services/ServiceCrud HTTP/1.1" 200 424
+127.0.0.1 - - [31/Mar/2023:12:41:12 -0600] "POST /WebServiceServidorSOAP/services/ServiceCrud HTTP/1.1" 200 427
+127.0.0.1 - - [31/Mar/2023:12:53:32 -0600] "POST /WebServiceServidorSOAP/services/ServiceCrud HTTP/1.1" 200 448
+127.0.0.1 - - [31/Mar/2023:12:58:55 -0600] "POST /WebServiceServidorSOAP/services/ServiceCrud HTTP/1.0" 200 436
+127.0.0.1 - - [31/Mar/2023:22:25:14 -0600] "GET / HTTP/1.1" 404 961
+127.0.0.1 - - [31/Mar/2023:22:25:56 -0600] "POST /WebServiceServidorSOAP/services/AdminService HTTP/1.0" 200 291
+127.0.0.1 - - [31/Mar/2023:22:25:56 -0600] "POST /WebServiceServidorSOAP/services/AdminService HTTP/1.0" 200 5392
+127.0.0.1 - - [31/Mar/2023:22:27:29 -0600] "POST /WebServiceServidorSOAP/services/ServiceCrud HTTP/1.1" 200 445

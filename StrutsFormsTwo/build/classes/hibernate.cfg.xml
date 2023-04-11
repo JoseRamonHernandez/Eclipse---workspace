@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="queries">
+  <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+  <property name="hibernate.connection.password">246856</property>
+  <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:orcl</property>
+  <property name="hibernate.connection.username">SYSTEM</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+  <property name="hibernate.connection.pool_size">2</property>
+  <property name="hibernate.show_sql">true</property>
+  <property name="hibernate.current_session_context_class">thread</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  
+  
+  <!-- MAPPEO DE LA CLASE QUE SOLO RETORNARÁ UN CATALOGO DE LA TABLA CIUDAD "select * from" -->
+  <mapping class="org.modelo.ciudad.Ciudad"/>
+  <mapping class="org.modelo.cuenta.Cuenta"/>
+  <mapping class="org.modelo.hta.Hta"/>
+  
+ </session-factory>
+</hibernate-configuration>

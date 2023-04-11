@@ -1,0 +1,17 @@
+INDEX VERSION 1.130
+C:\Users\joser\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2249658790.index
+\StrutsTest\src
+C:\Users\joser\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1144196750.index
+\StrutsFormsCompletePractice\src
+C:\Users\joser\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\875883444.index
+\StrutsFormsComplete\src
+C:\Users\joser\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3710541359.index
+\StrutsConsultas\src
+C:\Users\joser\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1127543373.index
+\StrutsFormsTwo\src
+C:\Users\joser\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4012694986.index
+\StrutsExam
+C:\Users\joser\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2720876199.index
+\StrutsFormsCompleteExam\src
+C:\Users\joser\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\991159974.index
+\WebServiceClienteSOAP\src

@@ -1,0 +1,5 @@
+package org.service.soap;
+
+public class ServiceCrud {
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;struts.xml&apos; to &apos;StrutsConsultas/src&apos;&#x0D;&#x0A;- Original project: &apos;StrutsTest&apos;&#x0D;&#x0A;- Destination element: &apos;StrutsConsultas/src&apos;&#x0D;&#x0A;- Original element: &apos;struts.xml&apos;" description="Copy file" destination="=StrutsConsultas/src" element1="src/struts.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1679598601710" units="0" version="1.0"/>
+</session>

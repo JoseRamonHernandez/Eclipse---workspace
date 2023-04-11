@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:p="http://primefaces.org/ui"
+xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+xmlns:f="http://java.sun.com/jsf/core">
+ <h:head>
+ <title>CRUD - PrimeFaces</title>
+ </h:head>
+ <h:body>
+ 
+ <h:form>
+ 
+ 	<p:commandButton value="Agregar Persona" icon="ui-icon-check"
+ 	actionListener="#{controllerPersona.limpiarPersona()}" 
+ 	oncomplete="PF('dialogoAgregar').show();" update=":formAgregar">
+ 	</p:commandButton>
+ 
+ </h:form>
+ 
+ <p:separator/>
+ 
+ <h:form id="formListado">
+ 
+ 	<p:dataTable id="tablaPersonas" paginator="true" paginatorPosition="bottom" rows="10"
+ 	var="persona" value="#{controllerPersona.listPersona}" emptyMessage="No existen personas">
+ 	
+ 	<p:column headerText="ID">
+ 		<h:outputText value="#{persona.id}"/>
+ 	</p:column>
+ 	
+ 	<p:column headerText="NOMBRE">
+ 		<h:outputText value="#{persona.nombre}"/>
+ 	</p:column>
+ 	
+ 	<p:column headerText="TELEFONO">
+ 		<h:outputText value="#{persona.telefono}"/>
+ 	</p:column>
+ 	
+ 	<p:column headerText="MODIFICAR" style="text-align: center">
+ 		<p:commandButton icon="ui-icon-pencil" title="modificar" 
+ 		oncomplete="PF('dialogoModificar').show();" update=":formModificar">
+ 			<f:setPropertyActionListener value="#{persona}" target="#{controllerPersona.persona}"/>
+ 		</p:commandButton>
+ 	</p:column>
+ 	
+ 	</p:dataTable>
+ 
+ </h:form>
+ 
+ </h:body>
+</html>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://soap.service.org" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://soap.service.org" xmlns:intf="http://soap.service.org" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://soap.service.org" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="updateS_Region">
+    <complexType>
+     <sequence>
+      <element name="id" type="xsd:int"/>
+      <element name="name" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="updateS_RegionResponse">
+    <complexType>
+     <sequence>
+      <element name="updateS_RegionReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="insertS_Region">
+    <complexType>
+     <sequence>
+      <element name="id" type="xsd:int"/>
+      <element name="name" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="insertS_RegionResponse">
+    <complexType>
+     <sequence>
+      <element name="insertS_RegionReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="deleteS_Region">
+    <complexType>
+     <sequence>
+      <element name="id_r" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="deleteS_RegionResponse">
+    <complexType>
+     <sequence>
+      <element name="deleteS_RegionReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="connectDataBase">
+    <complexType/>
+   </element>
+   <element name="connectDataBaseResponse">
+    <complexType/>
+   </element>
+   <element name="selectByIdS_Region">
+    <complexType>
+     <sequence>
+      <element name="id" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="selectByIdS_RegionResponse">
+    <complexType>
+     <sequence>
+      <element name="selectByIdS_RegionReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="connectDataBaseResponse">
+
+      <wsdl:part element="impl:connectDataBaseResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="insertS_RegionResponse">
+
+      <wsdl:part element="impl:insertS_RegionResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="deleteS_RegionResponse">
+
+      <wsdl:part element="impl:deleteS_RegionResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="insertS_RegionRequest">
+
+      <wsdl:part element="impl:insertS_Region" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateS_RegionRequest">
+
+      <wsdl:part element="impl:updateS_Region" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="updateS_RegionResponse">
+
+      <wsdl:part element="impl:updateS_RegionResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="deleteS_RegionRequest">
+
+      <wsdl:part element="impl:deleteS_Region" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="selectByIdS_RegionResponse">
+
+      <wsdl:part element="impl:selectByIdS_RegionResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="selectByIdS_RegionRequest">
+
+      <wsdl:part element="impl:selectByIdS_Region" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="connectDataBaseRequest">
+
+      <wsdl:part element="impl:connectDataBase" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="ServiceCrud">
+
+      <wsdl:operation name="updateS_Region">
+
+         <wsdl:input message="impl:updateS_RegionRequest" name="updateS_RegionRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:updateS_RegionResponse" name="updateS_RegionResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="insertS_Region">
+
+         <wsdl:input message="impl:insertS_RegionRequest" name="insertS_RegionRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:insertS_RegionResponse" name="insertS_RegionResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="deleteS_Region">
+
+         <wsdl:input message="impl:deleteS_RegionRequest" name="deleteS_RegionRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:deleteS_RegionResponse" name="deleteS_RegionResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="connectDataBase">
+
+         <wsdl:input message="impl:connectDataBaseRequest" name="connectDataBaseRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:connectDataBaseResponse" name="connectDataBaseResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="selectByIdS_Region">
+
+         <wsdl:input message="impl:selectByIdS_RegionRequest" name="selectByIdS_RegionRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:selectByIdS_RegionResponse" name="selectByIdS_RegionResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="ServiceCrudSoapBinding" type="impl:ServiceCrud">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="updateS_Region">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="updateS_RegionRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="updateS_RegionResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="insertS_Region">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="insertS_RegionRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="insertS_RegionResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="deleteS_Region">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="deleteS_RegionRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="deleteS_RegionResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="connectDataBase">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="connectDataBaseRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="connectDataBaseResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="selectByIdS_Region">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="selectByIdS_RegionRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="selectByIdS_RegionResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="ServiceCrudService">
+
+      <wsdl:port binding="impl:ServiceCrudSoapBinding" name="ServiceCrud">
+
+         <wsdlsoap:address location="http://localhost:7575/WebServiceServidorSOAP/services/ServiceCrud"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

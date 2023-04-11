@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Use this file to deploy some handlers/chains and services      --><!-- Two ways to do this:                                           --><!--   java org.apache.axis.client.AdminClient deploy.wsdd          --><!--      after the axis server is running                          --><!-- or                                                             --><!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   --><!--      from the same directory that the Axis engine runs         --><deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from ServiceCrudService WSDL service -->
+
+  <service name="ServiceCrud" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://soap.service.org"/>
+      <parameter name="wsdlServiceElement" value="ServiceCrudService"/>
+      <parameter name="schemaQualified" value="http://soap.service.org"/>
+      <parameter name="wsdlServicePort" value="ServiceCrud"/>
+      <parameter name="className" value="org.service.soap.ServiceCrud"/>
+      <parameter name="wsdlPortType" value="ServiceCrud"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation xmlns:operNS="http://soap.service.org" xmlns:retNS="http://soap.service.org" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="updateS_Region" qname="operNS:updateS_Region" returnQName="retNS:updateS_RegionReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://soap.service.org" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:id" type="tns:int"/>
+        <parameter xmlns:pns="http://soap.service.org" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:name" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://soap.service.org" name="connectDataBase" qname="operNS:connectDataBase" soapAction="">
+      </operation>
+      <operation xmlns:operNS="http://soap.service.org" xmlns:retNS="http://soap.service.org" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="insertS_Region" qname="operNS:insertS_Region" returnQName="retNS:insertS_RegionReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://soap.service.org" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:id" type="tns:int"/>
+        <parameter xmlns:pns="http://soap.service.org" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:name" type="tns:string"/>
+      </operation>
+      <operation xmlns:operNS="http://soap.service.org" xmlns:retNS="http://soap.service.org" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="deleteS_Region" qname="operNS:deleteS_Region" returnQName="retNS:deleteS_RegionReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://soap.service.org" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:id_r" type="tns:int"/>
+      </operation>
+      <operation xmlns:operNS="http://soap.service.org" xmlns:retNS="http://soap.service.org" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="selectByIdS_Region" qname="operNS:selectByIdS_Region" returnQName="retNS:selectByIdS_RegionReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://soap.service.org" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:id" type="tns:int"/>
+      </operation>
+      <parameter name="allowedMethods" value="selectByIdS_Region updateS_Region insertS_Region connectDataBase deleteS_Region"/>
+
+  </service>
+</deployment>

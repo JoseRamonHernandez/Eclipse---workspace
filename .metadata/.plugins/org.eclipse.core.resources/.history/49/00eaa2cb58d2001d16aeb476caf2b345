@@ -1,0 +1,5 @@
+package org.dao.report;
+
+public class DaoReport {
+
+}

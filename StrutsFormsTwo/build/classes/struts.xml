@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="default" extends="struts-default">
+	
+		<action name="catalogo" class="org.action.catalogo.ActionCatalogo" method="selectCiudad">
+			
+			<result name="success">/formcatalogo.jsp</result>
+					
+		</action>
+		
+		<action name="cuenta" class="org.action.autentica.ActionAutentica" method="autentica">
+			
+			<result name="error">/formautentica.jsp</result>
+			<result name="success">/index.jsp</result>
+					
+		</action>
+		
+		<action name="valida" class="org.action.hta.ActionHta" method="add">
+			
+			<result name="input">/formvalida.jsp</result>
+			<result name="success">/index.jsp</result>
+					
+		</action>
+		
+	</package>
+
+</struts>
